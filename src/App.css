@@ -1,3 +1,29 @@
 .App {
   text-align: center;
 }
+
+.page--header {
+  background-color: #F55A5A;
+}
+
+.place--location {
+  width: 326px;
+  height: 40px;
+  top: 136px;
+  left: 184px;
+}
+
+.place--title {
+  width: 40px;
+  height: 10px;
+  top: 119px;
+  left: 195px;
+}
+
+.img--url {
+  width: 125px;
+  height: 168px;
+  top: 100px;
+  left: 40px;
+  border-radius: 5px;
+}
