@@ -22,6 +22,18 @@ const data = [
       "The Sydney Opera House is a multi-venue performing arts centre in Sydney. Located on the banks of the Sydney Harbour, it is often regarded as one of the 20th century's most famous and distinctive buildings",
     imageUrl: "https://source.unsplash.com/JmuyB_LibRo ",
   },
+  {
+    id: 2,
+    title: "Geirangerfjord",
+    location: "Norway",
+    googleMapsUrl:
+      "https://www.google.com/maps/search/google+maps+++++title:+%22Geirangerfjord%22,/@62.1012787,7.0834928,14.79z",
+    startDate: "01 Oct, 2021",
+    endDate: "18 Nov, 2021",
+    description:
+      "The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og Romsdal county, Norway. It is located entirely in the Stranda Municipality.",
+    imageUrl: "https://source.unsplash.com/3PeSjpLVtLg",
+  }
 ];
 
 export default data;
