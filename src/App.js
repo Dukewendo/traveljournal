@@ -7,16 +7,7 @@ function App() {
   const placeCards = data.map((place) => {
     return (
       <div>
-        <Card
-          key={place.id}
-          location={place.location}
-          title={place.title}
-          map={place.googleMapsUrl}
-          startDate={place.startDate}
-          endDate={place.endDate}
-          description={place.description}
-          imageUrl={place.imageUrl}
-        />
+        <Card key={place.id} {...place} />
       </div>
     );
   });
@@ -24,7 +15,7 @@ function App() {
   return (
     <div>
       <Header />
-      <section className="page--cards">{placeCards}</section>
+      <div>{placeCards}</div>
     </div>
   );
 }

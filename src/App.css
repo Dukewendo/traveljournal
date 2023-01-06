@@ -1,29 +1,116 @@
-.App {
-  text-align: center;
-}
-
+/* Header */
 .page--header {
-  background-color: #F55A5A;
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  height: 55px;
+
+  background-color: #f55a5a;
 }
 
-.place--location {
-  width: 326px;
-  height: 40px;
-  top: 136px;
-  left: 184px;
+.header--image {
+  width: 30px;
+  height: 30px;
+
+  background: #dadada;
 }
 
-.place--title {
-  width: 40px;
-  height: 10px;
-  top: 119px;
-  left: 195px;
+.header--text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+/*  */
+
+/* Cards */
+
+.place--card {
+  display: grid;
+  grid-template-columns: 1fr 2fr 5fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". image location place "
+    ". image map ."
+    ". image title ."
+    ". image start ."
+    ". image end ."
+    ". image description ."
+    ;
 }
 
 .img--url {
+  grid-area: image;
   width: 125px;
   height: 168px;
-  top: 100px;
-  left: 40px;
   border-radius: 5px;
+}
+
+.place--location {
+  grid-area: location;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0.17em;
+
+  color: #2b283a;
+}
+
+.place--googleMaps {
+  grid-area: map;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-decoration-line: underline;
+
+  color: #918e9b;
+}
+
+.place--title {
+  grid-area: title;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: #2b283a;
+}
+
+.place--startDate {
+  grid-area: start;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+
+  color: #2b283a;
+}
+
+.place--endDate {
+  grid-area: end;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10.24px;
+  line-height: 12px;
+
+  color: #2b283a;
+}
+
+.place--description {
+  grid-area: description;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.24px;
+  line-height: 150%;
+
+  color: #2b283a;
 }
