@@ -8,6 +8,7 @@ function App() {
     return (
       <div>
         <Card key={place.id} {...place} />
+        <br />
       </div>
     );
   });
